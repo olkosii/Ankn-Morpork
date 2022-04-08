@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "P2WvM/5KfeVebq1laG/Cu8KLSGzKVrQHkhgrclsE/vr7Gyp2h1GDPHeXk2f0u80GMI94cxjl26/lbTazj9g5ug==",
+  "success": true,
+  "projectFilePath": "C:\\Programming\\коди\\практика\\Ankn-Morpork\\Ankn-Morpork.Tests\\Ankn-Morpork.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
+    "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
+    "C:\\Users\\Alexandr\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\Alexandr\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}

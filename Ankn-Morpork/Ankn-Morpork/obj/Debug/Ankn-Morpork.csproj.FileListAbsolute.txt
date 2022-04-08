@@ -1,0 +1,8 @@
+C:\Programming\коди\практика\Ankn-Morpork\Ankn-Morpork\bin\Debug\Ankn-Morpork.exe.config
+C:\Programming\коди\практика\Ankn-Morpork\Ankn-Morpork\bin\Debug\Ankn-Morpork.exe
+C:\Programming\коди\практика\Ankn-Morpork\Ankn-Morpork\bin\Debug\Ankn-Morpork.pdb
+C:\Programming\коди\практика\Ankn-Morpork\Ankn-Morpork\obj\Debug\Ankn-Morpork.csproj.AssemblyReference.cache
+C:\Programming\коди\практика\Ankn-Morpork\Ankn-Morpork\obj\Debug\Ankn-Morpork.csproj.SuggestedBindingRedirects.cache
+C:\Programming\коди\практика\Ankn-Morpork\Ankn-Morpork\obj\Debug\Ankn-Morpork.csproj.CoreCompileInputs.cache
+C:\Programming\коди\практика\Ankn-Morpork\Ankn-Morpork\obj\Debug\Ankn-Morpork.exe
+C:\Programming\коди\практика\Ankn-Morpork\Ankn-Morpork\obj\Debug\Ankn-Morpork.pdb

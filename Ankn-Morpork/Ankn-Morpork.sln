@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankn-Morpork", "Ankn-Morpork\Ankn-Morpork.csproj", "{4BE80FAF-93E9-49C7-A984-E7AB32B02332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankn-Morpork.Tests", "Ankn-Morpork.Tests\Ankn-Morpork.Tests.csproj", "{2126EB70-5757-4D8B-AA77-688C144F92EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BE80FAF-93E9-49C7-A984-E7AB32B02332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE80FAF-93E9-49C7-A984-E7AB32B02332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE80FAF-93E9-49C7-A984-E7AB32B02332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE80FAF-93E9-49C7-A984-E7AB32B02332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2126EB70-5757-4D8B-AA77-688C144F92EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2126EB70-5757-4D8B-AA77-688C144F92EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2126EB70-5757-4D8B-AA77-688C144F92EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2126EB70-5757-4D8B-AA77-688C144F92EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F87A7C0-7A6D-467A-A2CB-12227B3A6F6D}
+	EndGlobalSection
+EndGlobal
