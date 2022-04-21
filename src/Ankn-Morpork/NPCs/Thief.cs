@@ -1,18 +1,18 @@
 ﻿using System;
 
-namespace Ankn_Morpork
+namespace Ankn_Morpork.NPCs
 {
     public class Thief : GuildNPC
     {
         public static int currentAmountOfThief = 0;
         private int acceptableAmountOfThefts = 6;
 
-        public override decimal PlayerRewardForNPC {get; set;}
-        
+        public override decimal PlayerRewardForNPC { get; set; }
+
         public Thief()
         {
             currentAmountOfThief++;
-            PlayerRewardForNPC  = 10;
+            PlayerRewardForNPC = 10;
         }
 
         internal override void NPCPhrase()
@@ -36,7 +36,7 @@ namespace Ankn_Morpork
 
             if (currentAmountOfThief <= acceptableAmountOfThefts)
                 player.moneyQuantity -= reward;
-            else if(thief.PlayerRewardForNPC > player.moneyQuantity)
+            else if (thief.PlayerRewardForNPC > player.moneyQuantity)
             {
                 player.moneyQuantity = 0;
                 player.isAlive = false;

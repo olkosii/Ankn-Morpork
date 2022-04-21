@@ -1,6 +1,8 @@
-﻿using NUnit.Framework;
+﻿using Ankn_Morpork.Controllers;
+using Ankn_Morpork.NPCs;
+using NUnit.Framework;
 
-namespace Ankn_Morpork.Tests
+namespace Ankn_Morpork.Test.ControllersTest
 {
     [TestFixture]
     internal class PlayerPlaysWithNPCTest
@@ -8,13 +10,13 @@ namespace Ankn_Morpork.Tests
         private Player _player;
         private GuildNPC _guildNPC;
         private bool _playerAction;
-        private PlayerPlaysWithNPC _playerPlaysWithNPC;
+        private PlayerController _playerController;
 
         [SetUp]
         public void SetUp()
         {
             _player = new Player();
-            _playerPlaysWithNPC = new PlayerPlaysWithNPC();
+            _playerController = new PlayerController();
             _playerAction = false;
         }
 
@@ -23,7 +25,7 @@ namespace Ankn_Morpork.Tests
         {
             _guildNPC = new Clown();
 
-            _playerPlaysWithNPC.PlayWithNPC(_player, _guildNPC, _playerAction);
+            _playerController.PlayWithNPC(_player, _guildNPC, _playerAction);
 
             Assert.That(_player.isAlive == true);
         }
@@ -35,7 +37,7 @@ namespace Ankn_Morpork.Tests
             //acceptableAmountOfThefts by default = 6
             Thief.currentAmountOfThief = 7;
 
-            _playerPlaysWithNPC.PlayWithNPC(_player, _guildNPC, _playerAction);
+            _playerController.PlayWithNPC(_player, _guildNPC, _playerAction);
 
             Assert.That(_player.isAlive == true);
         }
@@ -46,7 +48,7 @@ namespace Ankn_Morpork.Tests
             _guildNPC = new Thief();
             Thief.currentAmountOfThief = 0;
 
-            _playerPlaysWithNPC.PlayWithNPC(_player, _guildNPC, _playerAction);
+            _playerController.PlayWithNPC(_player, _guildNPC, _playerAction);
 
             Assert.That(_player.isAlive == false);
         }
@@ -54,9 +56,9 @@ namespace Ankn_Morpork.Tests
         [Test]
         public void PlayWithNPC_PlayerActionIsFalseNpcIsBeggarWhoDoNotTakeMoney_PlayerStayAlive()
         {
-            _guildNPC = new Beggar() { name = BeggarType.Drinker};
+            _guildNPC = new Beggar() { name = BeggarType.Drinker };
 
-            _playerPlaysWithNPC.PlayWithNPC(_player, _guildNPC, _playerAction);
+            _playerController.PlayWithNPC(_player, _guildNPC, _playerAction);
 
             Assert.That(_player.isAlive == true);
         }
@@ -67,7 +69,7 @@ namespace Ankn_Morpork.Tests
             //All beggars but Drinker can take money
             _guildNPC = new Beggar() { name = BeggarType.Jimmy };
 
-            _playerPlaysWithNPC.PlayWithNPC(_player, _guildNPC, _playerAction);
+            _playerController.PlayWithNPC(_player, _guildNPC, _playerAction);
 
             Assert.That(_player.isAlive == false);
         }
@@ -77,7 +79,7 @@ namespace Ankn_Morpork.Tests
         {
             _guildNPC = new Assasin();
 
-            _playerPlaysWithNPC.PlayWithNPC(_player, _guildNPC, _playerAction);
+            _playerController.PlayWithNPC(_player, _guildNPC, _playerAction);
 
             Assert.That(_player.isAlive == false);
         }

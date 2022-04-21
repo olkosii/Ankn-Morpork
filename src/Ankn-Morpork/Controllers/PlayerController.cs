@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Ankn_Morpork.NPCs;
+using System;
 
-namespace Ankn_Morpork
+namespace Ankn_Morpork.Controllers
 {
-    public class PlayerPlaysWithNPC
+    public class PlayerController
     {
-        public void PlayWithNPC(Player player, GuildNPC npc,bool playerAction)
+        public void PlayWithNPC(Player player, GuildNPC npc, bool playerAction)
         {
             if (playerAction == true)
             {

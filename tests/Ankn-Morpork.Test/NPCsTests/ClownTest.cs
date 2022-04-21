@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
+﻿using Ankn_Morpork.NPCs;
+using NUnit.Framework;
 
-namespace Ankn_Morpork.Tests
+namespace Ankn_Morpork.Test
 {
     [TestFixture]
     public class ClownTest
@@ -15,7 +16,7 @@ namespace Ankn_Morpork.Tests
         }
 
         [Test]
-        public  void PlayerMeetGuildNPC_WhenCalled_GiveMoneyForPlayer()
+        public void PlayerMeetGuildNPC_WhenCalled_GiveMoneyForPlayer()
         {
             var playerMoneyQuantityBeforeCallingMethod = _player.moneyQuantity;
 

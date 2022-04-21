@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Ankn_Morpork
+namespace Ankn_Morpork.NPCs
 {
     public class Clown : GuildNPC
     {
         public ClownType name;
-        public override decimal PlayerRewardForNPC  {get; set;}
+        public override decimal PlayerRewardForNPC { get; set; }
 
         private static Dictionary<int, decimal> clownsDictionary = SetClowns();
 
@@ -39,7 +39,7 @@ namespace Ankn_Morpork
         public Clown()
         {
             name = GetClownName();
-            PlayerRewardForNPC   = clownsDictionary[(int)name];
+            PlayerRewardForNPC = clownsDictionary[(int)name];
         }
         internal override void NPCPhrase()
         {

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Ankn_Morpork.Controllers;
+using Ankn_Morpork.GameIntroduction;
+using Ankn_Morpork.NPCs;
+using System;
 
 namespace Ankn_Morpork
 {
@@ -12,7 +15,7 @@ namespace Ankn_Morpork
             GameController controller = new GameController();
 
             controller.GameStart(player);
-            Console.WriteLine(Player.EndOfGameReasons(player, controller._currentNPC,controller.playerAction));
+            Console.WriteLine(Player.EndOfGameReasons(player, controller._currentNPC, controller.playerAction));
 
             Console.Read();
         }

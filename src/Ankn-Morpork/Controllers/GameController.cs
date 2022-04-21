@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Ankn_Morpork.NPCs;
+using System;
 
-namespace Ankn_Morpork
+namespace Ankn_Morpork.Controllers
 {
     public class GameController
     {
@@ -13,11 +14,12 @@ namespace Ankn_Morpork
 
             return randomNpcNumber;
         }
-        private PlayerPlaysWithNPC _playerPlaysWithNPC = new PlayerPlaysWithNPC();
+
+        private PlayerController _playerController = new PlayerController();
         public void GameStart(Player player)
         {
             GuildNPC guildNPC = new GuildNPC();
-            while (player.isAlive == true &&  0 < player.moneyQuantity && player.moneyQuantity < 200)
+            while (player.isAlive == true && 0 < player.moneyQuantity && player.moneyQuantity < 200)
             {
                 var npc = guildNPC.CreateNpc(GetRandomNPCNumber());
                 npc.NPCPhrase();
@@ -25,7 +27,7 @@ namespace Ankn_Morpork
                 playerAction = player.Action(npc);
 
                 _currentNPC = npc;
-                _playerPlaysWithNPC.PlayWithNPC(player, npc, playerAction);
+                _playerController.PlayWithNPC(player, npc, playerAction);
             }
         }
     }

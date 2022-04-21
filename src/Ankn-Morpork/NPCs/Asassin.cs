@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Ankn_Morpork
+namespace Ankn_Morpork.NPCs
 {
     public class Assasin : GuildNPC
     {
         internal int MinReward { get; }
         internal int MaxReward { get; }
-        public override decimal PlayerRewardForNPC {get; set;}
+        public override decimal PlayerRewardForNPC { get; set; }
 
         private bool IsBusy { get; } = true;
 
@@ -70,7 +70,7 @@ namespace Ankn_Morpork
             if (assasin.MinReward <= proposedReward && proposedReward <= assasin.MaxReward)
             {
                 player.moneyQuantity -= proposedReward;
-                if(player.moneyQuantity < 0)
+                if (player.moneyQuantity < 0)
                     player.moneyQuantity = 0;
             }
             else
@@ -78,7 +78,7 @@ namespace Ankn_Morpork
                 player.moneyQuantity = 0;
                 player.isAlive = false;
             }
-                
+
         }
     }
 }

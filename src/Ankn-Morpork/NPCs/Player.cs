@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ankn_Morpork
+namespace Ankn_Morpork.NPCs
 {
     public class Player
     {
@@ -29,11 +29,11 @@ namespace Ankn_Morpork
 
             if (inputNumber == 1)
                 return true;
-            else 
+            else
                 return false;
-            
+
         }
-        public static string EndOfGameReasons(Player player,GuildNPC npc,bool action)
+        public static string EndOfGameReasons(Player player, GuildNPC npc, bool action)
         {
             if (player.moneyQuantity > 200)
             {
@@ -67,7 +67,7 @@ namespace Ankn_Morpork
                     return reason;
                 }
             }
-            else if(player.moneyQuantity < npc.PlayerRewardForNPC)
+            else if (player.moneyQuantity < npc.PlayerRewardForNPC)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 string reason = $"YOU DIED...\n" +
@@ -75,9 +75,9 @@ namespace Ankn_Morpork
 
                 return reason;
             }
-            
 
-            Console.ForegroundColor= ConsoleColor.Red;
+
+            Console.ForegroundColor = ConsoleColor.Red;
             return "YOU DIED...";
         }
     }

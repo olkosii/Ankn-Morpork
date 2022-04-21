@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Ankn_Morpork
+namespace Ankn_Morpork.NPCs
 {
     public class GuildNPC
     {
-        public virtual decimal PlayerRewardForNPC  { get;  set; }
+        public virtual decimal PlayerRewardForNPC { get; set; }
 
         public GuildNPC CreateNpc(int randomNpcNumber)
         {

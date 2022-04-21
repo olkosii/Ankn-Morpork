@@ -1,8 +1,9 @@
+using Ankn_Morpork.NPCs;
 using NUnit.Framework;
 
-namespace Ankn_Morpork.Tests
+namespace Ankn_Morpork.Test
 {
-    public class AssasinTest
+    public class Tests
     {
         private GuildNPC _assasinNPC;
         private Player _player;
@@ -18,7 +19,7 @@ namespace Ankn_Morpork.Tests
         {
             _assasinNPC.PlayerRewardForNPC = 10;
 
-            _assasinNPC.PlayerMeetGuildNPC(_player,_assasinNPC,_assasinNPC.PlayerRewardForNPC);
+            _assasinNPC.PlayerMeetGuildNPC(_player, _assasinNPC, _assasinNPC.PlayerRewardForNPC);
 
             Assert.That(_player.isAlive == true && _player.moneyQuantity == 90);
         }

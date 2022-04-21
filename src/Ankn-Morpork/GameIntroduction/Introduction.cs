@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ankn_Morpork
+namespace Ankn_Morpork.GameIntroduction
 {
     public static class Introduction
     {
@@ -14,7 +14,7 @@ namespace Ankn_Morpork
             Console.WriteLine("\t\t\t\tBut until you, my friend, did't do it, be careful, good luck to you!!!\n\n");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.ForegroundColor = ConsoleColor.Green;
-            
+
             Console.WriteLine("\tDuring the game you will meet members of different guilds,\nEach of them has its own rules and rewards for their services");
             Console.WriteLine("Initially, your money account is 100 Ankh-Morpork dollars\nYou should have 200 Ankh-Morpork dollars in order to leave this city\n");
 
@@ -26,7 +26,7 @@ namespace Ankn_Morpork
             Console.WriteLine("\nIs a school for professional killers,\nthis guild takes payment in the range of 5 to 30" +
                 "\nbut each assasin has their own payment range\n- - - - -");
 
-            Console.ForegroundColor= ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("\t-Beggars' Guild");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("\nIs the oldest, largest and (perhaps surprisingly) richest of the city's many guilds." +

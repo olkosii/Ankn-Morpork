@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
+﻿using Ankn_Morpork.NPCs;
+using NUnit.Framework;
 
-namespace Ankn_Morpork.Tests
+namespace Ankn_Morpork.Test
 {
     [TestFixture]
     public class ThiefTest
@@ -53,7 +54,7 @@ namespace Ankn_Morpork.Tests
         {
             Thief thief = (Thief)_thiefNPC;
             Thief.currentAmountOfThief = 7;
-            
+
             var result = thief.CheckIfThiefCanStealPlayerMoney();
 
             Assert.That(result, Is.False);
