@@ -42,19 +42,6 @@ namespace Ankn_Morpork.NPCs
             name = GetBeggarName();
             PlayerRewardForNPC = beggarsDictionary[(int)name];
         }
-        internal override void NPCPhrase()
-        {
-            Console.ForegroundColor = ConsoleColor.Blue;
-            if (name == BeggarType.Drinker)
-            {
-                Console.WriteLine($"You meet : {name} from Beggar guild\nHe will not chase you to death(you can continue or skip and stay alive)");
-                Console.ForegroundColor = ConsoleColor.White;
-                return;
-            }
-            Console.WriteLine($"You meet : {name} from Beggar guild\nGive him some money or he will chase you to death\n" +
-                $"(If you skip ,you will not be able to do anything, so you will die)");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
         public override void PlayerMeetGuildNPC(Player player, GuildNPC npc, decimal reward)
         {
             Beggar beggar = (Beggar)npc;

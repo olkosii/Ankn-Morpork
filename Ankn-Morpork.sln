@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankn-Morpork", "src/Ankn-Morpork\Ankn-Morpork.csproj", "{78F7142D-B31E-49F3-B2B5-D11B3720B466}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A8FD8E6-7E1E-4BBF-BE67-9E92C33BC5AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{801D2047-E964-4C86-A39B-A8BF09AE2981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankn-Morpork.Test", "tests/Ankn-Morpork.Test\Ankn-Morpork.Test.csproj", "{FCBB162B-0122-4FD5-ABBF-AAC31CDCC751}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankn-Morpork", "src\Ankn-Morpork\Ankn-Morpork.csproj", "{78F7142D-B31E-49F3-B2B5-D11B3720B466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankn-Morpork.Test", "tests\Ankn-Morpork.Test\Ankn-Morpork.Test.csproj", "{FCBB162B-0122-4FD5-ABBF-AAC31CDCC751}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

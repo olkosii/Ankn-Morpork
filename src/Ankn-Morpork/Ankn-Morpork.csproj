@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\PlayerController.cs" />
-    <Compile Include="GameIntroduction\Introduction.cs" />
+    <Compile Include="GameMessages\EndGameReason.cs" />
+    <Compile Include="GameMessages\Introduction.cs" />
+    <Compile Include="GameMessages\MeetNPCMessages.cs" />
     <Compile Include="NPCs\Asassin.cs" />
     <Compile Include="NPCs\Beggar.cs" />
     <Compile Include="NPCs\Clown.cs" />

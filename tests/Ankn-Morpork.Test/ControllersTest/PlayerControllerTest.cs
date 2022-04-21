@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace Ankn_Morpork.Test.ControllersTest
 {
     [TestFixture]
-    internal class PlayerPlaysWithNPCTest
+    internal class PlayerControllerTest
     {
         private Player _player;
         private GuildNPC _guildNPC;

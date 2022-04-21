@@ -25,7 +25,7 @@ namespace Ankn_Morpork.NPCs
 
             return null;
         }
+
         public virtual void PlayerMeetGuildNPC(Player player, GuildNPC npc, decimal Reward) { }
-        internal virtual void NPCPhrase() { }
     }
 }

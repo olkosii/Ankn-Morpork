@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ankn-Morpork\Ankn-Morpork.csproj" />
+    <ProjectReference Include="..\..\src\Ankn-Morpork\Ankn-Morpork.csproj" />
   </ItemGroup>
 
 </Project>

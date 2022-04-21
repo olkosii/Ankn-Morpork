@@ -37,32 +37,6 @@ namespace Ankn_Morpork.NPCs
                 return false;
         }
 
-        internal decimal CheckPlayerReward()
-        {
-            Console.Write("Write your reward for Assasin : ");
-
-            decimal proposedReward;
-            bool input = decimal.TryParse(Console.ReadLine(), out proposedReward);
-
-            while (input == false)
-            {
-                Console.WriteLine("\nPlease write only numbers...");
-                Console.Write("Write your reward for Assasin : ");
-                input = decimal.TryParse(Console.ReadLine(), out proposedReward);
-            }
-
-            return proposedReward;
-        }
-
-        internal override void NPCPhrase()
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("You meet : Assasin guild, it means somebody in the city ordered your death\n" +
-                "Can you pay more than your enemies?) (assasins don't tell their reward, you have to guess it)");
-            Console.WriteLine("(If you pay more than your enemy you will stay alive,if you skip you will die)");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
         public override void PlayerMeetGuildNPC(Player player, GuildNPC npc, decimal proposedReward)
         {
             Assasin assasin = (Assasin)npc;
@@ -78,7 +52,6 @@ namespace Ankn_Morpork.NPCs
                 player.moneyQuantity = 0;
                 player.isAlive = false;
             }
-
         }
     }
 }

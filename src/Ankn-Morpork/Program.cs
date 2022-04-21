@@ -15,7 +15,7 @@ namespace Ankn_Morpork
             GameController controller = new GameController();
 
             controller.GameStart(player);
-            Console.WriteLine(Player.EndOfGameReasons(player, controller._currentNPC, controller.playerAction));
+            Console.WriteLine(controller.GameEnd(player, controller._currentNPC, controller.playerAction));
 
             Console.Read();
         }

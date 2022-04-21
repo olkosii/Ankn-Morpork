@@ -41,13 +41,6 @@ namespace Ankn_Morpork.NPCs
             name = GetClownName();
             PlayerRewardForNPC = clownsDictionary[(int)name];
         }
-        internal override void NPCPhrase()
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"You meet : {name}, your old friend from Clown guild\nHe offers you a little extra money\n" +
-                $"(If you don't need extra money you can skip)");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
 
         public override void PlayerMeetGuildNPC(Player player, GuildNPC npc, decimal reward)
         {
