@@ -1,7 +1,7 @@
 ﻿using Ankn_Morpork.NPCs;
 using NUnit.Framework;
 
-namespace Ankn_Morpork.Test
+namespace Ankn_Morpork.Test.NPCsTests
 {
     [TestFixture]
     public class ThiefTest
