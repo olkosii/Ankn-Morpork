@@ -43,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\NPCBuilder.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\PlayerController.cs" />
     <Compile Include="GameMessages\EndGameReason.cs" />
     <Compile Include="GameMessages\Introduction.cs" />
     <Compile Include="GameMessages\MeetNPCMessages.cs" />
+    <Compile Include="NPCsInterface\IGuildNPC.cs" />
+    <Compile Include="NPCsInterface\IPlayer.cs" />
     <Compile Include="NPCs\Asassin.cs" />
     <Compile Include="NPCs\Beggar.cs" />
     <Compile Include="NPCs\Clown.cs" />
-    <Compile Include="NPCs\GuildNPC.cs" />
     <Compile Include="NPCs\Player.cs" />
     <Compile Include="NPCs\Thief.cs" />
     <Compile Include="Program.cs" />

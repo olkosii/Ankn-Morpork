@@ -1,4 +1,5 @@
 ﻿using Ankn_Morpork.NPCs;
+using Ankn_Morpork.NPCsInterface;
 using NUnit.Framework;
 
 namespace Ankn_Morpork.Test.NPCsTests
@@ -6,7 +7,7 @@ namespace Ankn_Morpork.Test.NPCsTests
     [TestFixture]
     public class ClownTest
     {
-        private GuildNPC _clownNPC;
+        private IGuildNPC _clownNPC;
         private Player _player;
         [SetUp]
         public void Setup()

@@ -1,5 +1,6 @@
 ﻿using Ankn_Morpork.Controllers;
 using Ankn_Morpork.NPCs;
+using Ankn_Morpork.NPCsInterface;
 using NUnit.Framework;
 
 namespace Ankn_Morpork.Test.ControllersTest
@@ -8,7 +9,7 @@ namespace Ankn_Morpork.Test.ControllersTest
     internal class PlayerControllerTest
     {
         private Player _player;
-        private GuildNPC _guildNPC;
+        private IGuildNPC _guildNPC;
         private bool _playerAction;
         private PlayerController _playerController;
 

@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Ankn_Morpork.NPCsInterface;
+using System;
 
 namespace Ankn_Morpork.NPCs
 {
-    public class Assasin : GuildNPC
+    public class Assasin : IGuildNPC
     {
         internal int MinReward { get; }
         internal int MaxReward { get; }
-        public override decimal PlayerRewardForNPC { get; set; }
+        public decimal PlayerRewardForNPC { get; set; }
 
         private bool IsBusy { get; } = true;
 
@@ -37,7 +38,7 @@ namespace Ankn_Morpork.NPCs
                 return false;
         }
 
-        public override void PlayerMeetGuildNPC(Player player, GuildNPC npc, decimal proposedReward)
+        public void PlayerMeetGuildNPC(IPlayer player, IGuildNPC npc, decimal proposedReward)
         {
             Assasin assasin = (Assasin)npc;
 

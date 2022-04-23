@@ -1,5 +1,7 @@
-﻿using Ankn_Morpork.GameMessages;
+﻿using Ankn_Morpork.Builder;
+using Ankn_Morpork.GameMessages;
 using Ankn_Morpork.NPCs;
+using Ankn_Morpork.NPCsInterface;
 using System;
 
 namespace Ankn_Morpork.Controllers
@@ -7,7 +9,7 @@ namespace Ankn_Morpork.Controllers
     public class GameController
     {
         public bool playerAction;
-        internal GuildNPC _currentNPC;
+        internal IGuildNPC _currentNPC;
         private PlayerController _playerController = new PlayerController();
 
         private int GetRandomNPCNumber()
@@ -18,12 +20,11 @@ namespace Ankn_Morpork.Controllers
             return randomNpcNumber;
         }
 
-        public void GameStart(Player player)
+        public void GameStart(IPlayer player)
         {
-            GuildNPC guildNPC = new GuildNPC();
             while (player.isAlive == true && 0 < player.moneyQuantity && player.moneyQuantity < 200)
             {
-                var npc = guildNPC.CreateNpc(GetRandomNPCNumber());
+                var npc = NPCBuilder.CreateNpc(GetRandomNPCNumber());
                 MeetNPCMessages.NPCPhrase(npc);
 
                 playerAction = _playerController.PlayerAction();
@@ -33,7 +34,7 @@ namespace Ankn_Morpork.Controllers
             }
         }
 
-        public string GameEnd(Player player, GuildNPC npc, bool action)
+        public string GameEnd(IPlayer player, IGuildNPC npc, bool action)
         {
             string reason = "";
             if (player.moneyQuantity > 200)

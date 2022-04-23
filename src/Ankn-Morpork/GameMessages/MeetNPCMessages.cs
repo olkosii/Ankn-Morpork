@@ -1,15 +1,12 @@
 ﻿using Ankn_Morpork.NPCs;
+using Ankn_Morpork.NPCsInterface;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ankn_Morpork.GameMessages
 {
     public class MeetNPCMessages
     {
-        internal static void NPCPhrase(GuildNPC npc)
+        internal static void NPCPhrase(IGuildNPC npc)
         {
             if(npc is Assasin)
             {

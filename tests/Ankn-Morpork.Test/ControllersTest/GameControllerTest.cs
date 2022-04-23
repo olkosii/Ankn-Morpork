@@ -1,6 +1,7 @@
 ﻿using Ankn_Morpork.Controllers;
 using Ankn_Morpork.GameMessages;
 using Ankn_Morpork.NPCs;
+using Ankn_Morpork.NPCsInterface;
 using NUnit.Framework;
 
 namespace Ankn_Morpork.Test.ControllersTest
@@ -10,7 +11,7 @@ namespace Ankn_Morpork.Test.ControllersTest
     {
         private GameController _contoller;
         private Player _player;
-        private GuildNPC _guildNPC;
+        private IGuildNPC _guildNPC;
 
         [SetUp]
         public void SetUp()
@@ -22,8 +23,6 @@ namespace Ankn_Morpork.Test.ControllersTest
         [Test]
         public void GameEnd_PlayerMoneyMoreThan200_ReturnWinLine()
         {
-            _guildNPC = new GuildNPC();
-
             _player.moneyQuantity = 201;
 
             var result = _contoller.GameEnd(_player, _guildNPC, true);

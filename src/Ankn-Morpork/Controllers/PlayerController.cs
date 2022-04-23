@@ -1,4 +1,5 @@
 ﻿using Ankn_Morpork.NPCs;
+using Ankn_Morpork.NPCsInterface;
 using System;
 
 namespace Ankn_Morpork.Controllers
@@ -44,7 +45,7 @@ namespace Ankn_Morpork.Controllers
             return proposedReward;
         }
 
-        public void PlayWithNPC(Player player, GuildNPC npc, bool playerAction)
+        public void PlayWithNPC(IPlayer player, IGuildNPC npc, bool playerAction)
         {
             if (playerAction == true)
             {

@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Ankn_Morpork.NPCsInterface;
+using System;
 
 namespace Ankn_Morpork.NPCs
 {
-    public class Thief : GuildNPC
+    public class Thief : IGuildNPC
     {
         public static int currentAmountOfThief = 0;
         public int acceptableAmountOfThefts { get; } = 6;
 
-        public override decimal PlayerRewardForNPC { get; set; }
+        public decimal PlayerRewardForNPC { get; set; }
 
         public Thief()
         {
@@ -15,7 +16,7 @@ namespace Ankn_Morpork.NPCs
             PlayerRewardForNPC = 10;
         }
 
-        public override void PlayerMeetGuildNPC(Player player, GuildNPC npc, decimal reward)
+        public void PlayerMeetGuildNPC(IPlayer player, IGuildNPC npc, decimal reward)
         {
             Thief thief = (Thief)npc;
 

@@ -1,12 +1,11 @@
-﻿using System;
+﻿using Ankn_Morpork.NPCs;
+using Ankn_Morpork.NPCsInterface;
 
-namespace Ankn_Morpork.NPCs
+namespace Ankn_Morpork.Builder
 {
-    public class GuildNPC
+    public class NPCBuilder
     {
-        public virtual decimal PlayerRewardForNPC { get; set; }
-
-        public GuildNPC CreateNpc(int randomNpcNumber)
+        public static IGuildNPC CreateNpc(int randomNpcNumber)
         {
             if (randomNpcNumber > 0 && randomNpcNumber < 5)
             {
@@ -25,7 +24,5 @@ namespace Ankn_Morpork.NPCs
 
             return null;
         }
-
-        public virtual void PlayerMeetGuildNPC(Player player, GuildNPC npc, decimal Reward) { }
     }
 }
